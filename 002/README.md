@@ -10,7 +10,7 @@
 ## Primitive Types
 <p>int, double, float, boolean, char, byte, short, long</p>
 
-`// -> comentario de uma linha`
+` // -> comentario de uma linha `
 <pre>
 /*
 comentario de
@@ -26,7 +26,7 @@ linhas
 </pre>
 
 <p>No java utilizar camelCase para nome das variaveis:</p>
-`int idadeDoParticipante = 20;`
+<code>int idadeDoParticipante = 20</code>
 
 ## Curso Java Completo - Aula 06: Continuação tipos primitivos, exercício e operadores
 
