@@ -1,16 +1,21 @@
 ## Curso Java Completo - Aula 04: Download do ambiente de desenvolvimento
 
-### Shortcuts
+### Shortcuts IntelliJ
+
 #### Alt + 1 = Abre e fecha a janela lateral.
-#### Ctrl + Shift  + F10 = compila e roda o programa atual.
+
+#### Ctrl + Shift + F10 = compila e roda o programa atual.
+
 #### Shift + F10 = compila e roda o programa se já rodado antes pelo comando anterior.
 
 ## Curso Java Completo - Aula 05: Tipos primitivos, convenções de código e comentários
 
 ## Primitive Types
+
 <p>int, double, float, boolean, char, byte, short, long</p>
 
-` // -> comentario de uma linha `
+`// -> comentario de uma linha`
+
 <pre>
 /*
 comentario de
@@ -45,7 +50,6 @@ linhas
 
 ## Curso Java Completo - Aula 07: Operador resto e operadores de comparação
 
-
 <p>Operadores de Comparação</p>
 <pre>
 >    -> Maior que
@@ -76,6 +80,46 @@ linhas
 boolean z = false;
 
 if(z = true) {
-    System.out.println("Sim isso seria true por que é uma atribuição e não uma comparação");
+System.out.println("Sim isso seria true por que é uma atribuição e não uma comparação");
+}
+
+</pre>
+
+## Curso Java Completo - Aula 11: Controle de fluxo: Tabela verdade e mais.
+
+<p>Operador ternário:</p>
+<code>status = idade > 17 ? "Adulto" : "Não Adulto";</code>
+
+## Curso Java Completo - Aula 13: Controle de fluxo switch e exercícios
+
+<pre>
+char sexo = 'M';
+
+  switch (sexo) {
+    case 'M':
+      System.out.println("Masculino");
+      break;
+    case 'F':
+      System.out.println("Feminino");
+      break;
+  }
+</pre>
+
+## Curso Java Completo - Aula 15: Controle de fluxo for, while, do while
+
+<pre>
+int i = 0;
+
+while (i < 10) {
+  System.out.println(++i);
+  ;
+}
+
+do {
+  System.out.println("Dentro do Do While");
+} while (i < 10);
+
+for (int j = 0; j < 10; j++) {
+  System.out.println("Valor de i é " + j);
 }
 </pre>
