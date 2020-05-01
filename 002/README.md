@@ -123,3 +123,42 @@ for (int j = 0; j < 10; j++) {
   System.out.println("Valor de i é " + j);
 }
 </pre>
+
+## Curso Java Completo - Aula 19: Arrays parte 2
+
+<pre>
+// int idades[]; not recomended
+int[] idades = new int[3];
+String[] fruits = new String[3]; 
+idades[0] = 20;
+idades[1] = 30;
+idades[2] = 40;
+fruits[0] = "Maça";
+fruits[1] = "Melancia";
+fruits[2] = "Uva";
+
+for (int i = 0; i < 3; i++) {
+  System.out.println(idades[i]);
+}
+
+// No java tem a propriedade 'length' que retorna o tamanho do array
+
+for (int i = 0; i < fruits.length; i++) {
+  System.out.println(fruits[i]);
+}
+</pre>
+
+## Curso Java Completo - Aula 20: Arrays parte 3 foreach
+
+<p>Maneirar alternativas de inicializar um array.</p>
+<pre>
+int[] numeros2 = { 1, 2, 3, 4, 5 };
+int[] numeros3 = new int[]{9, 8, 7, 6, 5};
+</pre>
+
+<p>forEach</p>
+<pre>
+for (int i : numeros3) {
+  System.out.println(i);
+}
+</pre>

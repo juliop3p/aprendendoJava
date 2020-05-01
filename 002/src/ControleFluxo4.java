@@ -5,7 +5,6 @@ public class ControleFluxo4 {
 
     while (i < 10) {
       System.out.println(++i);
-      ;
     }
 
     do {
@@ -14,6 +13,12 @@ public class ControleFluxo4 {
 
     for (int j = 0; j < 10; j++) {
       System.out.println("Valor de i é " + j);
+
+      if (j < 5) {
+        continue;
+      } else {
+        break;
+      }
     }
   }
 }
