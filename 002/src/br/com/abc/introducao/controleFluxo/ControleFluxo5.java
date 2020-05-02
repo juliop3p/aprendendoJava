@@ -1,3 +1,5 @@
+package br.com.abc.introducao.controleFluxo;
+
 public class ControleFluxo5 {
   public static void main(String[] args) {
     double valorTotal = 30000;

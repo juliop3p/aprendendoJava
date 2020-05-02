@@ -162,3 +162,75 @@ for (int i : numeros3) {
   System.out.println(i);
 }
 </pre>
+
+## Curso Java Completo - Aula 21: Arrays parte 4 arrays multidimensionais
+
+#### arrays multidimensionais
+
+<pre>
+int[][] dias = new int[2][2]; 
+    dias[0][0] = 5;
+    dias[0][1] = 10;
+    dias[1][0] = 3;
+    dias[1][1] = 6;
+
+    for (int i = 0; i < dias.length; i++) {
+      for (int j = 0; j < dias[i].length; j++) {
+        System.out.println(dias[i][j]);
+      }
+    }
+
+    for (int[] ref : dias) {
+      for (int dia : ref)
+        System.out.println(dia);
+    }
+</pre>
+
+## Curso Java Completo - Aula 22: Arrays parte 5 arrays multidimencionais
+
+<pre>
+int[][] dias1 = new int[3][];
+dias1[0] = new int[2];
+dias1[3] = new int[2];
+
+dias1[0][0] = 99;  
+dias1[0][1] = 98;
+dias1[1][0] = 50;  
+dias1[1][1] = 60;
+dias1[1][2] = 70;
+
+int[][] dias2 = { { 99, 98 }, { 50, 60, 70 }, { 1, 2, 3, 4, 5 } };
+</pre>
+
+## Curso Java Completo - Aula 24: Introdução a classes parte 1
+
+<pre>
+package br.com.abc.javacore.introducaoclasses.classes;
+
+public class Estudante {
+  public String nome;
+  public String matricula;
+  public int idade;
+}
+</pre>
+
+## ---------------------------------------------------------
+
+<pre>
+package br.com.abc.javacore.introducaoclasses.test;
+
+import br.com.abc.javacore.introducaoclasses.classes.Estudante;
+
+public class EstudandeTest {
+  public static void main(String[] args) {
+    Estudante joao = new Estudante();
+    joao.nome = "João";
+    joao.matricula = "1212";
+    joao.idade = 16;
+
+    System.out.println(joao.nome);
+    System.out.println(joao.idade);
+    System.out.println(joao.matricula);
+  }
+}
+</pre>

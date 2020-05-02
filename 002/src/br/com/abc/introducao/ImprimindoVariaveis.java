@@ -1,3 +1,5 @@
+package br.com.abc.introducao;
+
 public class ImprimindoVariaveis {
     public static void main(String[] args) {
         int idade = 20;
@@ -7,7 +9,7 @@ public class ImprimindoVariaveis {
         boolean verdadeiro = true;
         boolean falso = false;
         long numeroGrande = 1000L;
-        char caractere  = 97; // 2 bytes
+        char caractere = 97; // 2 bytes
         String nome = "Julio";
 
         System.out.println(caractere);

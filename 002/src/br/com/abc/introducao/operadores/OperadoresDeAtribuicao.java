@@ -1,3 +1,5 @@
+package br.com.abc.introducao.operadores;
+
 public class OperadoresDeAtribuicao {
     public static void main(String[] args) {
         float salario = 1000;
