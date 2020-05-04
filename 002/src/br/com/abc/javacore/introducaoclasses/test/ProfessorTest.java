@@ -7,8 +7,8 @@ public class ProfessorTest {
     Professor professor = new Professor();
     professor.nome = "Matheus";
     professor.matricula = "4525";
-    professor.rg = "257851264";
-    professor.cpf = "48562485236";
+    professor.rg = "25.785.126-4";
+    professor.cpf = "485.624.852-36";
 
     System.out.println("Nome: " + professor.nome);
     System.out.println("Matricula: " + professor.matricula);
