@@ -234,3 +234,50 @@ public class EstudandeTest {
   }
 }
 </pre>
+
+
+## Curso Java Completo - Aula 32: Passagem de objeto como parâmetro e this pt 02
+
+<p>Passar um objeto por parametro</p>
+
+<pre>
+public class Professor {
+  public String nome;
+
+  public void imprime(Professor prof) {
+    System.out.println("Nome: " + prof.nome);
+  }
+}
+</pre>
+
+<pre>
+Professor professor = new Professor();
+professor.nome = "Arisvaldo";
+professor.imprime(professor);
+</pre>
+
+<p>Imprimir objeto com o this</p>
+
+<pre>
+public class Professor {
+  public String nome;
+
+  public void imprime() {
+    System.out.println("Nome: " + this.nome);
+  }
+}
+</pre>
+
+## Curso Java Completo - Aula 33: Passagem de parâmetros varargs
+
+<pre>
+    // Se receber mais de um parâmetro o VarArgs precisa ser o último.
+    // int... a -> isso transforma o que recebe em um array.
+    public void somaVarArgs(int... numeros) {
+        int soma = 0;
+        for(int numero : numeros) {
+            soma += numero;
+        }
+        System.out.println(soma);
+    }
+</pre>

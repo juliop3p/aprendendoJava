@@ -33,4 +33,27 @@ public class Calculadora {
 
         System.out.println("Não é possivel dividor por 0");
     }
+
+    public void alteraDoisNumeros(int a, int b) {
+        a = 30;
+        b = 40;
+        System.out.println(a + " + " + b + " = " + (a+b));
+    }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for(int numero : numeros) {
+            soma += numero;
+        }
+        System.out.println(soma);
+    }
+
+    // se receber mais de um parâmetro o VarArgs precisa ser o último
+    public void somaVarArgs(int... numeros) {
+        int soma = 0;
+        for(int numero : numeros) {
+            soma += numero;
+        }
+        System.out.println(soma);
+    }
 }

@@ -12,5 +12,10 @@ public class CalculadoraTest {
         System.out.println("Divisão: " + calculadora.divideDoisNumeros(7, 0));
         System.out.println("Raiz Quadradra: " + calculadora.raizQuadrada(49));
         calculadora.imprimeDoisNumerosDivididos(8, 0);
+
+        int[] numeros = new int[]{1, 2, 3, 4, 5};
+        calculadora.somaArray(numeros);
+
+        calculadora.somaVarArgs(5, 5, 5, 55);
     }
 }
