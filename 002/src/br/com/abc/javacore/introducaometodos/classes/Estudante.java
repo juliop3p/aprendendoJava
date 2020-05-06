@@ -1,9 +1,9 @@
 package br.com.abc.javacore.introducaometodos.classes;
 
 public class Estudante {
-    public String nome;
-    public int idade;
-    public double[] notas = new double[3];
+    private String nome;
+    private int idade;
+    private double[] notas;
 
     public void armazenarDados(String nome, int idade, double... notas) {
         this.nome = nome;

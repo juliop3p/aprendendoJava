@@ -281,3 +281,58 @@ public class Professor {
         System.out.println(soma);
     }
 </pre>
+
+## Curso Java Completo - Aula 37: Modificador de acesso private, get e set pt 02
+
+<p>Private só dá acesso dentro da própria classe</p>
+
+<p>Recomendado Criar Setters e Getters para objetos internos</p>
+
+* Exemplo
+<pre>
+ private String name;
+ 
+ //Setter
+ public void setName(String name) {
+    this.name = name;
+ }
+ 
+ //Getter
+ public String getName() {
+    return this.name;
+ }
+   
+</pre>
+
+ <p>Quando criar uma variável boolean recomendado usar 'is' no começo do nome da variavel.</p>
+ <code>private boolean isClient;</code>
+
+## Curso Java Completo - Aula 40: Construtores e sobrecarga de construtores pt 02
+<p>Sobrecarga (Overload) de métodos em Java. A sobrecarga, ou overload em inglês, permite a existência de vários métodos com o mesmo nome.</p>
+
+<pre>
+// Class Pessoa
+public String nome;
+public int idade;
+
+public Pessoa(String nome) {
+    this.nome = nome;
+}
+
+public Pessoa(String nome, int idade) {
+    this.nome = nome;
+    this.idade = idade;
+}
+
+public Pessoa() {
+
+}
+
+</pre>
+
+<p>Neste exemplo eu posso instanciar 3 metódos de diferentes maneiras.</p>
+<pre>
+Pessoa pessoa1 = new Pessoa();
+Pessoa pessoa1 = new Pessoa("Julio");
+Pessoa pessoa1 = new Pessoa("Julio", 20);
+</pre>
