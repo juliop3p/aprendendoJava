@@ -205,7 +205,7 @@ int[][] dias2 = { { 99, 98 }, { 50, 60, 70 }, { 1, 2, 3, 4, 5 } };
 ## Curso Java Completo - Aula 24: Introdução a classes parte 1
 
 <pre>
-package br.com.abc.javacore.introducaoclasses.classes;
+package br.com.abc.javacore.Aintroducaoclasses.classes;
 
 public class Estudante {
   public String nome;
@@ -217,9 +217,9 @@ public class Estudante {
 ## ---------------------------------------------------------
 
 <pre>
-package br.com.abc.javacore.introducaoclasses.test;
+package br.com.abc.javacore.Aintroducaoclasses.test;
 
-import br.com.abc.javacore.introducaoclasses.classes.Estudante;
+import br.com.abc.javacore.Aintroducaoclasses.classes.Estudante;
 
 public class EstudandeTest {
   public static void main(String[] args) {
