@@ -379,3 +379,133 @@ public class Cliente {
     Cliente cliente1 = new Cliente();
     Cliente cliente2 = new Cliente();
 </pre>
+
+## Curso Java Completo - Aula 48: Exercício associação de classes pt 03
+
+*Classe Professor*
+<pre>
+public class Professor {
+    private Aluno[] alunos; // cada professor tem varios alunos
+    private String nome;
+    private String especialidade;
+}
+</pre>
+
+*Classe Aluno*
+<pre>
+public class Professor {
+        private Professor professor; // cada aluno tem um professor
+        private String nome;
+        private int idade;
+}
+</pre>
+
+*Classe Test Aluno/Professor Assosiação*
+<pre>
+public static void main(String[] args) {
+    Aluno aluno1 = new Aluno("Julio", 20);
+    Aluno aluno2 = new Aluno("Maria", 22);
+        
+    Professor professor = new Professor("Yoda", "Usar a força para programar");
+        
+    aluno1.setProfessor(professor); // aluno1 associado ao professor Yoda
+    aluno2.setProfessor(professor); // aluno2 associado ao professor Yoda
+        
+    professor.setAlunos(new Aluno[]{ aluno1, aluno2 }); // prefessor associado a dois alunos
+}
+</pre>
+
+## Curso Java Completo - Aula 50: Herança pt 01
+
+*Classe Pessoa*
+<pre>
+public class Pessoa {
+    private String nome;
+    private String cpf;
+}
+</pre>
+
+*Classe Funcionario*
+<pre>
+public class Pessoa {
+    private String nome;
+    private String cpf;
+}
+
+// a palavra extends Pessoa faz com que a classe Funcionario herdem as variáveis de Pessoa
+// sendo eles nome e cpf inclusive metódos criados em pessoas
+
+public class Funcionario extends Pessoa {
+    private double salario;
+}
+</pre>
+
+## Curso Java Completo - Aula 51: Herança parte 2 e referência super
+
+*Classe Pessoa*
+<pre>
+public class Pessoa {
+    private String nome;
+    private String cpf;
+    
+    // imprime os valores do objeto porém caso seja o funcionario não imprimirá
+    // o salário
+    public void print() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println("Endereço: " + this.endereco.getRua());
+    }
+
+}
+</pre>
+
+*Classe Funcionario*
+<pre>
+public class Funcionario extends Pessoa {
+    private double salario;
+    
+    // imprime os valores do objeto porém caso seja o funcionario não imprimirá
+    // o salário
+    public void print() {
+        super.print() // esse print é da classe Pessoa utilizan a palavra reservada super
+        System.out.println("Salario: R$" + this.salario);
+    }
+}
+</pre>
+
+## Curso Java Completo - Aula 52: Herança e Modificador Protected pt 03
+
+*Classe Pessoa*
+<pre>
+public class Pessoa {
+    // variáveis ficam viziveis no pacote e nos filhos da classe
+    protected String nome;
+    protected String cpf;
+    
+    public void print() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println("Endereço: " + this.endereco.getRua());
+    }
+
+}
+</pre>
+
+*Classe Funcionario*
+<pre>
+public class Funcionario extends Pessoa {
+    private double salario;
+    
+    // imprime os valores do objeto porém caso seja o funcionario não imprimirá
+    // o salário
+    public void print() {
+        super.print() // esse print é da classe Pessoa utilizan a palavra reservada super
+        System.out.println("Salario: R$" + this.salario);
+    }
+    
+    // super.nome funciona porque a variavel possuí o protected
+    public void printReciboPagamento() {
+        System.out.println("Eu " + super.nome + " recebi o pagamento de R$" + this.salario);
+    }
+}
+</pre>
