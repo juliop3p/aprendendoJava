@@ -336,3 +336,46 @@ Pessoa pessoa1 = new Pessoa();
 Pessoa pessoa1 = new Pessoa("Julio");
 Pessoa pessoa1 = new Pessoa("Julio", 20);
 </pre>
+
+## Curso Java Completo - Aula 43: Métodos Estáticos
+
+`this` é associado ao objeto e quando utilizamos a palavra `static` em algum metódo ou variável estamos mexendo diretamente na classe.
+#### exemplo de uso
+
+<pre>
+package br.com.abc.javacore.Fmodificadorestatico.classes;
+
+public class Carro {
+    // Velocidade limite deve ser de 240km/h
+    private String nome;
+    private static double idadeMaxima = 60;
+
+    public 
+}
+</pre>
+
+## Curso Java Completo - Aula 44: Bloco de inicialização
+
+Blocos estáticos são executados apenas uma vez na criação do objeto exemplo:
+
+<pre>
+public class Cliente {
+    private String nome;
+       
+    // Executaria apenas uma vez pq é estatico. 
+    static {
+        System.out.println("Bloco de Inicialização Estático");
+    }
+    
+    // Executaria toda vez que fosse criado um novo objeto.
+    {
+            System.out.println("Bloco de Inicialização Não Estático");
+        }
+        
+}
+    
+    // main()
+    Cliente cliente0 = new Cliente();
+    Cliente cliente1 = new Cliente();
+    Cliente cliente2 = new Cliente();
+</pre>
