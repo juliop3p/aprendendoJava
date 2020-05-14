@@ -509,3 +509,10 @@ public class Funcionario extends Pessoa {
     }
 }
 </pre>
+
+
+## Curso Java Completo - Aula 56: Modificador Final
+
+*Constantes*
+<br/> 
+`private static final double VELOCIDADE_LIMITE = 240;`

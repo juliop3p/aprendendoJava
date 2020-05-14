@@ -3,6 +3,19 @@ package br.com.abc.javacore.Hheranca.classes;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    public Funcionario(String nome) {
+        super(nome);
+        System.out.println("Dentro do construtor do funcionario");
+    }
+
+    {
+        System.out.println("Bloco de inicialização funcionario");
+    }
+
+    public Funcionario() {
+
+    }
+
     public double getSalario() {
         return salario;
     }
