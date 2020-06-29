@@ -13,7 +13,7 @@ public class DAOTest {
 	public static void main(String[] args) {
 		GenericDAO arquivoDAO = new ArquivoDAOImpl();
 		arquivoDAO.save();
-		java.util.List<String> lista = new ArrayList<>();
+		List<String> lista = new ArrayList<>();
 		
 		lista.add("nome1");
 		lista.add("nome2");
